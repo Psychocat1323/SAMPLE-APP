@@ -50,7 +50,7 @@ namespace SAMPLE_APP
         }
 
         // Delete Button
-        private async void deleteBtn_Click(object sender, EventArgs e)
+        private void deleteBtn_Click(object sender, EventArgs e)
         {
             DialogResult userResult = MessageBox.Show("Are you sure you want to delete 'PRODUCT ID': " + ProductID + "", "BE CAREFUL", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             switch (userResult)
