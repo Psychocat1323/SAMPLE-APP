@@ -10,6 +10,10 @@ namespace SAMPLE_APP
 {
     abstract class SQL_Abstract
     {
+
+        // Change the database connection in Properties > UserSetting
+        // Don't need to specificy what database this class create a database
+        // if error when testing connection enable Trust Server Certificate
         protected string _connectionString
         {
             get => Properties.UserSettings.Default.ConnString;
